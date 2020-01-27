@@ -1,0 +1,51 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
+
+    <%= link_to 'Recipies',root_path, class: 'navbar-brand' %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav w-100">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <!--agregado-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown link
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">xxxx</a>
+                <a class="dropdown-item" href="#">yyyy</a>
+                <a class="dropdown-item" href="#">zzzzz</a>
+              </div>
+            </li>
+            <!--agregado-->
+            <li class="nav-item dropdown ml-auto active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> User</a>
+              <div class="dropdown-menu dropdown-menu-right " aria-labelledby="navbarDropdownMenuLink">
+                <h6 class="dropdown-header">User Options</h6>
+                <%= link_to '#', class: 'dropdown-item text text-secondary' do %>
+                <i class="fa fa-user">&nbsp;&nbsp; Profile</i>
+                <% end %>
+
+                <%= link_to '#', class: 'dropdown-item text text-secondary' do %>
+                <i class="fa fa-cog">&nbsp;&nbsp; Settings</i>
+                <% end %>
+                <div class="dropdown-divider">
+
+                </div>
+                <%= link_to '#', class: 'dropdown-item text text-secondary' do %>
+                <i class="fa fa-sign-out">&nbsp;&nbsp; Sign Out</i>
+                <% end %>
+              </div>
+            </li>
+        </ul>
+    </div>
+</nav>
